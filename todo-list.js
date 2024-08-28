@@ -24,7 +24,7 @@ function addTodoDaymiclElement(element) {
 }
 
 document.getElementById('add-button').addEventListener('click', (e) => {
-    addTodoList(e)
+  addTodoList(e)
 });
 
 function addTodoList() {
@@ -48,6 +48,7 @@ const showTodoList = () => { //first time page referace jo data save localstorge
     console.log(localTodoList);
     localTodoList.forEach(curElement => {
         addTodoDaymiclElement(curElement);
+        console.log(curElement)
     });
 };
 showTodoList();
